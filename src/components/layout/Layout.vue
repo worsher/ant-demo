@@ -8,7 +8,9 @@
     collapsed-width="0"
     @collapse="onCollapse"
     @breakpoint="onBreakpoint">
-      <div class="logo" />
+      <div class="logo">
+        admin
+      </div>
       <v-menu></v-menu>
     </a-layout-sider>
     <a-layout>
@@ -58,5 +60,9 @@ export default defineComponent({
     height: 32px;
     background: rgba(255, 255, 255, 0.2);
     margin: 16px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 </style>

@@ -4,6 +4,7 @@
   mode="inline"
   v-model:selectedKeys="selectedKeys">
     <a-menu-item key="1">
+      <component :is="a"></component>
       <user-outlined />
       <span>nav 1</span>
     </a-menu-item>
@@ -30,7 +31,8 @@ export default defineComponent({
   },
   data () {
     return {
-      selectedKeys: ['1']
+      selectedKeys: ['1'],
+      a: UserOutlined
     }
   }
 })
